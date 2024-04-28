@@ -34,7 +34,7 @@ export default function Layout() {
       {/* Encabezado con botones y logo */}
       <NavBar />
       {/* Resto del contenido */}
-      <main className="flex-1 h-screen  p-3 mx-10">
+      <main className="flex-1 h-screen  p-3 mx-10 " >
         {!showResumen && !showMenu && <Outlet className="hidden md:block" />}
       <Footer/>
       </main>

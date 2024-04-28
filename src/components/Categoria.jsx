@@ -8,7 +8,7 @@ export default function Categoria({categoria}) {
   const resaltarCategoriaActual = () => categoriaActual.id === id ? 'text-pink-700' : 'text-inherit';
 
   return (
-    <div className={`${ resaltarCategoriaActual() } flex item-center gap-4 w-full p-3 hover:text-pink-700 cursor-pointer`}>
+    <div >
      
       <button 
         type="button"

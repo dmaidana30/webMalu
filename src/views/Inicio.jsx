@@ -8,21 +8,26 @@ export default function Inicio() {
 
   const productos = data.filter(producto => producto.categoria_id === categoriaActual.id)
 
+
   return (
     <>
-      <h1 className='text-4x1 font-black'>{categoriaActual.nombre}</h1>
-      <p className='text 2x1 my-10'>
-        Elige y personaliza tu pedido a continuación.
-      </p>
+      <h1 className='text-4x1 font-black text-center	'>{categoriaActual.nombre}</h1>
+   
 
-      <div className='grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5'>
-    {productos.map(producto => (
-      <Producto
-        key={producto.imagen}
-        producto={producto}
-      />
-    ))}
-</div>
+      <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '16px',
+            maxWidth: '800px',
+            margin: '0 auto'
+          }}>
+        {productos.map(producto => (
+          <Producto
+            key={producto.imagen}
+            producto={producto}
+          />
+        ))}
+      </div>
 
 
     </>

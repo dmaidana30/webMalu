@@ -1,33 +1,23 @@
 const categorias = [
     {
         icono: "cafe",
-        nombre: "Café",
+        nombre: "Cremas",
         id:1
       },
       {
         icono: "hamburguesa",
-        nombre: "Hamburguesas",
+        nombre: "Jabones Artesanales",
         id: 2
       },
       {
         icono: "pizza",
-        nombre: "Pizzas",
+        nombre: "Perfumadores",
         id: 3
       },
       {
         icono: "dona",
-        nombre: "Donas",
+        nombre: "Shampoo solidos",
         id: 4
-      },
-      {
-        icono: "pastel",
-        nombre: "Pasteles",
-        id: 5
-      },
-      {
-        icono: "galletas",
-        nombre: "Galletas",
-        id: 6
       }
 ]
 

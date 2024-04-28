@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import useQuisco from "../hooks/useQuiosco"
 import { formatearDinero } from "../helpers";
-
+import {Image} from "@nextui-org/react";
 export default function ModalProducto() {
 
     const { producto, handleClickModal, handleAgregarPedido, pedido } = useQuisco();
@@ -17,12 +17,15 @@ export default function ModalProducto() {
     }, [pedido])
 
     return (
-        <div className="md:flex items-center gap-10">
+        <div className="md:flex items-center gap-10 z-1	">
             <div className="md:w-1/3">
-                <img
-                    alt={`Imagen producto ${producto.nombre}`}
-                    src={`/img/${producto.imagen}.jpg`}
+            <Image
+                      isZoomed
+                      width={240}
+                alt={`Imagen producto ${producto.nombre}`}
+                                src={`/img/${producto.imagen}.jpeg`}
                 />
+             
             </div>
 
             <div className="md:w-2/3">

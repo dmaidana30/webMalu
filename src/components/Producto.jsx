@@ -1,6 +1,6 @@
 import { formatearDinero } from "../helpers"
 import useQuiosco from "../hooks/useQuiosco"
-
+import {Image} from "@nextui-org/react";
 export default function Producto({producto}) {
 
     const { handleClickModal,handleSetProducto } = useQuiosco();
@@ -16,13 +16,18 @@ export default function Producto({producto}) {
         handleSetProducto(producto);
     }}
 >
-  <img
-    src={`/img/${imagen}.jpg`} 
+  {/* <img
+    src={`/img/${imagen}.jpeg`} 
              alt={`imagen ${nombre}`}
     //         className="w-full"
     class="h-56 w-full rounded-md object-cover"
-  />
-
+  /> */}
+  <Image
+      isBlurred
+      width={240}
+      alt="Categorias"
+      src={`/img/${imagen}.jpeg`} 
+    />
   <div class="mt-2">
     <dl>
       <div>
